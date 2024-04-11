@@ -5,15 +5,13 @@
 
 This repo is made for a challenge with Frogmi.
 
-this backend has 1 task: earthquakesback:get_earthquakes 
-which fetch all data from : https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson and store it on postgreSQL DB.
-
-
-
-
-
 
 ## Documentation
+
+This API was made with Ruby on Rails 7.0.8
+
+this backend has 1 task: earthquakesback:get_earthquakes 
+which fetch all data from : https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson and store it on postgreSQL DB.
 
 This backend has 2 endpoints:
 
