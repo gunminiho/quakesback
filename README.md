@@ -39,7 +39,7 @@ body = contains text received as a comment, must be at least 10 characters long 
 
 ## API Reference
 
-#### Get all quakes
+#### Get all quakes per page & filtered
 
 ```http
   GET /api/features
