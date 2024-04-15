@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: sismosback_production
-  username: sismosback
+  database: sismodb #sismosback_production
+  username: sismodb_user #sismosback
   password: <%= ENV["PG_PASSWORD"] %>
