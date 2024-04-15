@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+gem 'rack-cors', require: 'rack/cors'
+
 # this gem is used to load environment variables from a .env file into ENV in development and test environments
 gem 'dotenv-rails', groups: [:development, :test]
 

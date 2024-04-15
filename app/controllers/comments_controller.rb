@@ -15,6 +15,17 @@ class CommentsController < ApplicationController
     end
   end
 
+  def index
+    @comments = Comment.where(feature_id: params[:feature_id])
+    # Configurando los encabezados de respuesta
+    response.headers['Content-Type'] = 'application/json'
+    if @comments.empty?
+      render json: {status: 'ERROR', message: 'No comments found', data: []}, status: :not_found
+    else
+      render json: {status: 'SUCCESS', message: 'Loaded comments', data: @comments}, status: :ok
+    end
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:body, :feature_id)
